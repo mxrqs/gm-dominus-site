@@ -1,0 +1,91 @@
+/* ==========================================================
+   GM Dominus — Estilos principais
+   ========================================================== */
+
+:root {
+  --bg: #0a0a0b;
+  --bg-alt: #131315;
+  --bg-alt-2: #18181b;
+  --line: #232326;
+  --text: #f5f5f5;
+  --text-muted: #a1a1aa;
+  --accent: #f97316;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+  font-family: "Inter", sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.source-notice {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 2rem;
+}
+
+.source-notice__content {
+  width: min(680px, 100%);
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--bg-alt);
+}
+
+.source-notice__eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+}
+
+.source-notice h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1;
+}
+
+.source-notice p {
+  margin-bottom: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Cole abaixo os estilos completos do arquivo original. */
